@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2ACCF9C14B1670C007D5AF5 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2ACCF9B14B1670C007D5AF5 /* QuickLook.framework */; };
+		C2ACCF9E14B1670C007D5AF5 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2ACCF9D14B1670C007D5AF5 /* ApplicationServices.framework */; };
+		C2ACCFA014B1670C007D5AF5 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2ACCF9F14B1670C007D5AF5 /* CoreServices.framework */; };
+		C2ACCFA214B1670C007D5AF5 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2ACCFA114B1670C007D5AF5 /* CoreFoundation.framework */; };
+		C2ACCFAA14B1670C007D5AF5 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = C2ACCFA914B1670C007D5AF5 /* GenerateThumbnailForURL.c */; };
+		C2ACCFAC14B1670C007D5AF5 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = C2ACCFAB14B1670C007D5AF5 /* GeneratePreviewForURL.c */; };
+		C2ACCFAE14B1670C007D5AF5 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C2ACCFAD14B1670C007D5AF5 /* main.c */; };
+		C2ACCFBA14B19C70007D5AF5 /* PAMQuickLookPlugIn.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = C2ACCF9814B1670C007D5AF5 /* PAMQuickLookPlugIn.qlgenerator */; };
+		C2B671AF14CCE1A1003E1279 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = C2B671AD14CCE1A1003E1279 /* License.txt */; };
+		C2B671B014CCE1A1003E1279 /* Readme.markdown in Resources */ = {isa = PBXBuildFile; fileRef = C2B671AE14CCE1A1003E1279 /* Readme.markdown */; };
+		C2E9634F14CA99CE00811C1D /* PAMReader.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E9634E14CA99CE00811C1D /* PAMReader.h */; };
+		C2E9635214CA99E000811C1D /* PAMReader.c in Sources */ = {isa = PBXBuildFile; fileRef = C2E9635114CA99E000811C1D /* PAMReader.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C2ACCFB914B19C52007D5AF5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = /Library/QuickLook;
+			dstSubfolderSpec = 0;
+			files = (
+				C2ACCFBA14B19C70007D5AF5 /* PAMQuickLookPlugIn.qlgenerator in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C2ACCF9814B1670C007D5AF5 /* PAMQuickLookPlugIn.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PAMQuickLookPlugIn.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2ACCF9B14B1670C007D5AF5 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		C2ACCF9D14B1670C007D5AF5 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		C2ACCF9F14B1670C007D5AF5 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		C2ACCFA114B1670C007D5AF5 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C2ACCFA514B1670C007D5AF5 /* PAMQuickLookPlugIn-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PAMQuickLookPlugIn-Info.plist"; sourceTree = "<group>"; };
+		C2ACCFA914B1670C007D5AF5 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		C2ACCFAB14B1670C007D5AF5 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		C2ACCFAD14B1670C007D5AF5 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C2B671AD14CCE1A1003E1279 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		C2B671AE14CCE1A1003E1279 /* Readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.markdown; sourceTree = "<group>"; };
+		C2E9634E14CA99CE00811C1D /* PAMReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMReader.h; sourceTree = "<group>"; };
+		C2E9635114CA99E000811C1D /* PAMReader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PAMReader.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2ACCF9314B1670C007D5AF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2ACCF9C14B1670C007D5AF5 /* QuickLook.framework in Frameworks */,
+				C2ACCF9E14B1670C007D5AF5 /* ApplicationServices.framework in Frameworks */,
+				C2ACCFA014B1670C007D5AF5 /* CoreServices.framework in Frameworks */,
+				C2ACCFA214B1670C007D5AF5 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2ACCF8B14B1670C007D5AF5 = {
+			isa = PBXGroup;
+			children = (
+				C2B671AD14CCE1A1003E1279 /* License.txt */,
+				C2B671AE14CCE1A1003E1279 /* Readme.markdown */,
+				C2ACCFA314B1670C007D5AF5 /* PAMQuickLookPlugIn */,
+				C2ACCF9A14B1670C007D5AF5 /* Frameworks */,
+				C2ACCF9914B1670C007D5AF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2ACCF9914B1670C007D5AF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2ACCF9814B1670C007D5AF5 /* PAMQuickLookPlugIn.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2ACCF9A14B1670C007D5AF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2ACCF9B14B1670C007D5AF5 /* QuickLook.framework */,
+				C2ACCF9D14B1670C007D5AF5 /* ApplicationServices.framework */,
+				C2ACCF9F14B1670C007D5AF5 /* CoreServices.framework */,
+				C2ACCFA114B1670C007D5AF5 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2ACCFA314B1670C007D5AF5 /* PAMQuickLookPlugIn */ = {
+			isa = PBXGroup;
+			children = (
+				C2E9634E14CA99CE00811C1D /* PAMReader.h */,
+				C2E9635114CA99E000811C1D /* PAMReader.c */,
+				C2ACCFA914B1670C007D5AF5 /* GenerateThumbnailForURL.c */,
+				C2ACCFAB14B1670C007D5AF5 /* GeneratePreviewForURL.c */,
+				C2ACCFAD14B1670C007D5AF5 /* main.c */,
+				C2ACCFA514B1670C007D5AF5 /* PAMQuickLookPlugIn-Info.plist */,
+			);
+			path = PAMQuickLookPlugIn;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C2ACCF9414B1670C007D5AF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2E9634F14CA99CE00811C1D /* PAMReader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C2ACCF9714B1670C007D5AF5 /* PAMQuickLookPlugIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2ACCFB214B1670C007D5AF5 /* Build configuration list for PBXNativeTarget "PAMQuickLookPlugIn" */;
+			buildPhases = (
+				C2ACCF9214B1670C007D5AF5 /* Sources */,
+				C2ACCF9314B1670C007D5AF5 /* Frameworks */,
+				C2ACCF9414B1670C007D5AF5 /* Headers */,
+				C2ACCF9514B1670C007D5AF5 /* Resources */,
+				C2ACCF9614B1670C007D5AF5 /* Rez */,
+				C2ACCFB914B19C52007D5AF5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PAMQuickLookPlugIn;
+			productName = PAMQuickLookPlugIn;
+			productReference = C2ACCF9814B1670C007D5AF5 /* PAMQuickLookPlugIn.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2ACCF8D14B1670C007D5AF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C2ACCF9014B1670C007D5AF5 /* Build configuration list for PBXProject "PAMQuickLookPlugIn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C2ACCF8B14B1670C007D5AF5;
+			productRefGroup = C2ACCF9914B1670C007D5AF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2ACCF9714B1670C007D5AF5 /* PAMQuickLookPlugIn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2ACCF9514B1670C007D5AF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B671AF14CCE1A1003E1279 /* License.txt in Resources */,
+				C2B671B014CCE1A1003E1279 /* Readme.markdown in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		C2ACCF9614B1670C007D5AF5 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2ACCF9214B1670C007D5AF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2ACCFAA14B1670C007D5AF5 /* GenerateThumbnailForURL.c in Sources */,
+				C2ACCFAC14B1670C007D5AF5 /* GeneratePreviewForURL.c in Sources */,
+				C2ACCFAE14B1670C007D5AF5 /* main.c in Sources */,
+				C2E9635214CA99E000811C1D /* PAMReader.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C2ACCFB014B1670C007D5AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		C2ACCFB114B1670C007D5AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+		C2ACCFB314B1670C007D5AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "PAMQuickLookPlugIn/PAMQuickLookPlugIn-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		C2ACCFB414B1670C007D5AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "PAMQuickLookPlugIn/PAMQuickLookPlugIn-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2ACCF9014B1670C007D5AF5 /* Build configuration list for PBXProject "PAMQuickLookPlugIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2ACCFB014B1670C007D5AF5 /* Debug */,
+				C2ACCFB114B1670C007D5AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2ACCFB214B1670C007D5AF5 /* Build configuration list for PBXNativeTarget "PAMQuickLookPlugIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2ACCFB314B1670C007D5AF5 /* Debug */,
+				C2ACCFB414B1670C007D5AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2ACCF8D14B1670C007D5AF5 /* Project object */;
+}
